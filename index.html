@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Ekstrakurikuler | 2026/2027</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+  <!-- Dekorasi latar -->
+  <div class="bg-shape shape-one"></div>
+  <div class="bg-shape shape-two"></div>
+  <div class="sparkle sparkle-one">✦</div>
+  <div class="sparkle sparkle-two">✦</div>
+  <div class="sparkle sparkle-three">✧</div>
+
+  <main class="page-container">
+    <section class="form-card">
+
+      <!-- Header -->
+      <div class="form-header">
+        <div class="header-icon"><i class="bi bi-mortarboard-fill"></i></div>
+        <div class="header-content">
+          <div class="title-wrapper">
+            <h1>Formulir Pendaftaran</h1>
+            <h2>Ekstrakurikuler</h2>
+          </div>
+          <p>Isi data berikut untuk mendaftar ekstrakurikuler yang kamu pilih.</p>
+          <span class="academic-year"><i class="bi bi-calendar3"></i> Tahun Ajaran 2026/2027</span>
+        </div>
+        <div class="motivation">
+          <span>Bersama</span>
+          <strong>Raih Prestasi</strong>
+          <span>Terbaik</span>
+          <i class="bi bi-heart-fill"></i>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form id="registrationForm" novalidate>
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="nama"><span class="label-icon"><i class="bi bi-person"></i></span>Nama Lengkap <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <i class="bi bi-person input-icon"></i>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" autocomplete="name">
+            </div>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="nis"><span class="label-icon"><i class="bi bi-person-vcard"></i></span>NIS <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <i class="bi bi-person-vcard input-icon"></i>
+              <input type="text" id="nis" name="nis" placeholder="Masukkan NIS" inputmode="numeric">
+            </div>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="kelas"><span class="label-icon"><i class="bi bi-mortarboard"></i></span>Kelas <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <i class="bi bi-mortarboard input-icon"></i>
+              <select id="kelas" name="kelas">
+                <option value="" selected disabled>Pilih kelas</option>
+                <option>XI PPLG 1</option>
+                <option>XI PPLG 2</option>
+                <option>XI PPLG 3</option>
+                <option>XI PPLG 4</option>
+                <option>X PPLG 1</option>
+                <option>X PPLG 2</option>
+                <option>X PPLG 3</option>
+                <option>X PPLG 4</option>
+                <option>XI TKJ 1</option>
+                <option>XI TKJ 2</option>
+                <option>XI TKJ 3</option>
+                <option>X TKJ 1</option>
+                <option>X TKJ 2</option>
+                <option>X TKJ 3</option>
+                <option>XI kuliner 1</option>
+                <option>XI kuliner 2</option>
+                <option>XI kuliner 3</option>
+                <option>X kuliner 1</option>
+                <option>X kuliner 2</option>
+                <option>X kuliner 3</option>
+                <option>XI busana 1</option>
+                <option>XI busana 2</option>
+                <option>XI busana 3</option>
+                <option>XI TKR 1</option>
+                <option>XI TKR 2</option>
+                <option>XI TKR 3</option>
+                <option>X TKR 1</option>
+                <option>X TKR 2</option>
+                <option>X TKR 3</option>
+                <option>XI TSM 1</option>
+                <option>XI TSM 2</option>
+                <option>XI TSM 3</option>
+                <option>X TSM 1</option>
+                <option>X TSM 2</option>
+                <option>X TSM 3</option>
+              </select>
+              <i class="bi bi-chevron-down select-arrow"></i>
+            </div>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="ekstrakurikuler"><span class="label-icon"><i class="bi bi-people"></i></span>Ekstrakurikuler yang Dipilih <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <i class="bi bi-people input-icon"></i>
+              <select id="ekstrakurikuler" name="ekstrakurikuler">
+                <option value="" selected disabled>Pilih ekstrakurikuler</option>
+                <option>Jurnalistik</option>
+                <option>PMR</option>
+                <option>Paskibra</option>
+                <option>Pencak Silat</option>
+                <option>Tari</option>
+                <option>Bahasa Jepang</option>
+                <option>Bantara</option>
+                <option>Futsal</option>
+                <option>Voli</option>
+                <option>Drumband</option>
+                <option>Robbana</option>
+                <option>Rohis</option>
+                <option>Faster</option>
+                <option>Padus</option>
+              </select>
+              <i class="bi bi-chevron-down select-arrow"></i>
+            </div>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="nomorHp"><span class="label-icon"><i class="bi bi-telephone"></i></span>Nomor HP <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <i class="bi bi-telephone input-icon"></i>
+              <input type="tel" id="nomorHp" name="nomorHp" placeholder="Contoh: 0812 3456 7890" inputmode="tel">
+            </div>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email"><span class="label-icon"><i class="bi bi-envelope"></i></span>Email <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <i class="bi bi-envelope input-icon"></i>
+              <input type="email" id="email" name="email" placeholder="Contoh: nama@email.com" autocomplete="email">
+            </div>
+            <small class="error-message"></small>
+          </div>
+
+        </div>
+
+        <button type="submit" class="submit-button">
+          <i class="bi bi-send"></i>
+          <span>Daftar Sekarang</span>
+          <i class="bi bi-arrow-right arrow-icon"></i>
+        </button>
+      </form>
+
+      <div class="form-footer">
+        <i class="bi bi-shield-check"></i>
+        Data pendaftaran digunakan untuk keperluan administrasi sekolah.
+      </div>
+    </section>
+  </main>
+
+  <!-- Notifikasi sukses -->
+  <div class="success-popup" id="successPopup" role="status">
+    <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+    <div>
+      <strong>Pendaftaran Berhasil!</strong>
+      <p>Data kamu berhasil dikirim.</p>
+    </div>
+    <button id="closePopup" aria-label="Tutup"><i class="bi bi-x"></i></button>
+  </div>
+
+  <!-- ===== Chatbot ===== -->
+  <div id="cb-launcher">
+    <span id="cb-label">Butuh Bantuan?</span>
+    <button id="cb-btn" aria-label="Buka chatbot ekstrakurikuler" aria-expanded="false">
+      <svg width="42" height="42" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect x="9" y="14" width="30" height="24" rx="10" fill="#fff" opacity=".95"/>
+        <circle cx="19" cy="26" r="3" fill="#6d4aff"/>
+        <circle cx="29" cy="26" r="3" fill="#6d4aff"/>
+        <path d="M20 32q4 3 8 0" stroke="#6d4aff" stroke-width="2" stroke-linecap="round"/>
+        <path d="M24 14V8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="24" cy="7" r="2.5" fill="#fff"/>
+      </svg>
+    </button>
+  </div>
+
+  <section id="cb-window" role="dialog" aria-label="Chatbot ekstrakurikuler">
+    <header class="cb-head">
+      <div class="cb-avatar">🤖</div>
+      <div><b>Asisten Ekskul</b><small>Tanya apa saja soal ekskul</small></div>
+      <button id="cb-close" aria-label="Tutup chat">×</button>
+    </header>
+    <div id="cb-body" aria-live="polite"></div>
+    <div id="cb-chips" class="cb-chips"></div>
+    <form id="cb-form" class="cb-form">
+      <input id="cb-input" type="text" placeholder="Ketik, mis. jadwal futsal..." autocomplete="off" aria-label="Pesan">
+      <button id="cb-send" type="submit" aria-label="Kirim">➤</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="data.js"></script>
+  <script src="chatbot.js"></script>
+</html>
